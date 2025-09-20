@@ -14,7 +14,9 @@ const app = express();
 app.use(express.json());
 
 // Fallback to local URI if .env is not loaded
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/whatsappquiz';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://gauravpandey54909_db:<password>@cluster0.hbbuolp.mongodb.net/whatsappquiz
+
+';
 
 const connectDB = async () => {
   try {
