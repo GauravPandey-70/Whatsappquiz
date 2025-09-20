@@ -3,9 +3,9 @@
 ## Architecture
 - **WhatsApp**: Baileys (WebSocket client for messaging).
 - **Backend**: Node.js + Express (handles events, state).
-- **DB**: MongoDB (sessions + analytics via Mongoose).
+- **DB**: MongoDB Atlas (sessions + analytics via Mongoose).
 - **Logic**: State machine in quiz.js; rule-based recs.
-- **Tools**: Free - Baileys, Mongoose, Atlas, Render.
+- **Tools**: Free - Baileys, Mongoose, Atlas.
 
 ## Setup
 1. cd backend, npm install.
@@ -23,7 +23,6 @@
 
 ## Deployment
 - Render: New Web Service, connect GitHub, set env vars. Build: npm install; Start: node server.js.
-- No Postman needed (no external APIs).
 
 ## Sample Logs
 See database/sample-logs.json.
